@@ -1,0 +1,34 @@
+<div id="directions">
+
+    <h2>Reasoning Study</h2>
+    
+    <p>
+    <strong>Instructions</strong><br>
+    For this experiment you will be shown a visualization and a text description of a reasoning problem. At the bottom of the page will be a button labeled "I'm ready to see the question". Please take as much time as you want to understand the visualization and text. When you are ready to answer a few questions based on the information presented, please click the "I'm ready to see the question" button. The visualization and text will remain on the page with the questions. 
+    </p>
+    
+    <p style="clear:both;">
+    After you have read the above instructions, click Start to begin the experiment. 
+    <button id="start" type="button">Start</button>
+    </p>
+    </div>
+    
+    <style>
+            #images {
+                    
+            }
+    </style>
+    
+    <script>
+    (function() {
+    
+            init(); 
+    
+            function init() {
+                    experimentr.hideNext(); 
+    
+                    d3.select('#start').on('click', experimentr.next); 
+    
+            }
+    }())
+    </script>
